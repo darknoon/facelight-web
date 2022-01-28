@@ -23,7 +23,7 @@ const VideoPlayer = ({ url }: { url: string }) => (
 );
 
 const Icon = () => (
-  <a href="/download">
+  <a href="https://facelight.s3.amazonaws.com/builds/FaceLight-0.0.1a1.zip">
     <Image
       src="/Icon512~mac.png"
       alt="FaceLight Icon shows a geometric face looking into a bright screen"
@@ -64,13 +64,11 @@ const Home: NextPage = () => {
           Works with MacBook Pro with M1 Pro or Pro Max, or any Mac connected to
           a Pro Display XDR.
         </p>
+        <small>Coming soon: Notarization or Testflight, your suggestions</small>
       </main>
 
       <footer className={styles.footer}>
-        <a href="https://darknoon.com">
-          Built by Andrew Pouliot. I made this site in a hour, don&rsquo;t come
-          for me.
-        </a>
+        <a href="https://darknoon.com">Built by Andrew Pouliot.</a>
       </footer>
     </div>
   );
