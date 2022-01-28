@@ -23,14 +23,14 @@ const VideoPlayer = ({ url }: { url: string }) => (
 );
 
 const Icon = () => (
-  <a href="https://facelight.s3.amazonaws.com/builds/FaceLight-0.0.1a1.zip">
+  <a href="https://facelight.s3.amazonaws.com/builds/FaceLight-0.0.1a2.zip">
     <Image
       src="/Icon512~mac.png"
       alt="FaceLight Icon shows a geometric face looking into a bright screen"
       width={128}
       height={128}
     />
-    <p>Download alpha 1</p>
+    <p>Download alpha 2</p>
   </a>
 );
 
