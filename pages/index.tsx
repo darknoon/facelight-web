@@ -49,13 +49,13 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <h1 className={styles.title}>FaceLight</h1>
         <p className={styles.description}>
-          Turn your mac's XDR screen into a video light!
+          Turn your mac&rsquo;s XDR screen into a video light!
         </p>
         <VideoPlayer url={chaos} />
         <p></p>
         <p>
-          This is what the UI looks like (screen recording doesn't show how darn
-          bright it is)
+          This is what the UI looks like (screen recording doesn&rsquo;t show
+          how darn bright it is)
         </p>
         <VideoPlayer url={ui} />
         <p>Would you like to try it?</p>
@@ -67,7 +67,10 @@ const Home: NextPage = () => {
       </main>
 
       <footer className={styles.footer}>
-        <a href="https://darknoon.com">Built by Andrew Pouliot</a>
+        <a href="https://darknoon.com">
+          Built by Andrew Pouliot. I made this site in a hour, don&rsquo;t come
+          for me.
+        </a>
       </footer>
     </div>
   );
