@@ -12,6 +12,13 @@
   align-items: center;
 }
 
+.video {
+  border-radius: 30px;
+  background: black;
+  width: 640px;
+  height: 360px;
+}
+
 .footer {
   display: flex;
   flex: 1;
@@ -29,7 +36,6 @@
 }
 
 .title a {
-  color: #0070f3;
   text-decoration: none;
 }
 
