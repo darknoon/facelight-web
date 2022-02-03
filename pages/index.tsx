@@ -23,14 +23,14 @@ const VideoPlayer = ({ url }: { url: string }) => (
 );
 
 const Icon = () => (
-  <a href="https://facelight.s3.amazonaws.com/builds/FaceLight-0.0.1a2.zip">
+  <a href="https://testflight.apple.com/join/F5RKhfn9">
     <Image
       src="/Icon512~mac.png"
       alt="FaceLight Icon shows a geometric face looking into a bright screen"
       width={128}
       height={128}
     />
-    <p>Download alpha 2</p>
+    <p>Join TestFlight</p>
   </a>
 );
 
@@ -41,7 +41,7 @@ const Home: NextPage = () => {
         <title>FaceLight for macOS</title>
         <meta
           name="description"
-          content="Turns your mac's XDR screen into a video light"
+          content="Turns your Mac's XDR screen into a video light"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -49,7 +49,7 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <h1 className={styles.title}>FaceLight</h1>
         <p className={styles.description}>
-          Turn your mac&rsquo;s XDR screen into a video light!
+          Turn your Mac&rsquo;s XDR screen into a video light!
         </p>
         <VideoPlayer url={chaos} />
         <p></p>
@@ -64,7 +64,6 @@ const Home: NextPage = () => {
           Works with MacBook Pro with M1 Pro or Pro Max, or any Mac connected to
           a Pro Display XDR.
         </p>
-        <small>Coming soon: Notarization or Testflight, your suggestions</small>
       </main>
 
       <footer className={styles.footer}>
