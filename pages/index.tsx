@@ -3,6 +3,8 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Script from "next/script";
+import ProDisplayXDROptions from "../public/ProDisplayXDR-Options.png";
+import ProDisplayXDRPanel from "../public/ProDisplayXDR-Panel.png";
 
 const chaos =
   "https://player.vimeo.com/video/671208512?h=c8e89d1b24&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479";
@@ -32,6 +34,10 @@ const Icon = () => (
     />
     <p>Join TestFlight</p>
   </a>
+);
+
+const RetinaImage = ({ src }: { src: StaticImageData }) => (
+  <Image src={src} width={src.width / 2} height={src.height / 2} />
 );
 
 const Home: NextPage = () => {
@@ -64,6 +70,22 @@ const Home: NextPage = () => {
           Works with MacBook Pro with M1 Pro or Pro Max, or any Mac connected to
           a Pro Display XDR.
         </p>
+        <section>
+          <h2>FAQ</h2>
+          <dl>
+            <dt>
+              I have a Pro Display XDR, but Facelight is no brighter than other
+              white areas on screen!
+            </dt>
+            <dd>
+              Make sure you have the right profile selected!
+              <br />
+              <RetinaImage src={ProDisplayXDRPanel} />
+              <br />
+              <RetinaImage src={ProDisplayXDROptions} />
+            </dd>
+          </dl>
+        </section>
       </main>
 
       <footer className={styles.footer}>
